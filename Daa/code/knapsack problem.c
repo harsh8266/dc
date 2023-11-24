@@ -61,7 +61,7 @@ int main()
     }
 
     int totalProfit = knapsack(num, weight, profit, capacity);
-    printf("Total profit: %d\n", totalProfit);
+    printf("Total profit: %f\n", totalProfit);
 
     return 0;
 }
