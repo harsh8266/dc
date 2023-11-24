@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int knapsack(int num, float weight[], float profit[], int capacity)
+float knapsack(int num, float weight[], float profit[], int capacity)
 {
     int tp = 0;
     for (int i = 0; i < num; i++)
@@ -12,7 +12,7 @@ int knapsack(int num, float weight[], float profit[], int capacity)
         }
         else
         {
-            tp += (capacity / weight[i]) * profit[i];
+tp += (capacity / weight[i]) * profit[i];
             break;
         }
     }
@@ -37,7 +37,6 @@ int main()
     printf("Enter Capacity: ");
     scanf("%f", &capacity);
 
-    // Sort in non-increasing order
     int temp;
     for (int i = 0; i < num; i++)
     {
@@ -60,7 +59,7 @@ int main()
         }
     }
 
-    int totalProfit = knapsack(num, weight, profit, capacity);
+    float totalProfit = knapsack(num, weight, profit, capacity);
     printf("Total profit: %f\n", totalProfit);
 
     return 0;
