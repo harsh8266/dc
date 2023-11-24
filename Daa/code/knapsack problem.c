@@ -12,6 +12,7 @@ int knapsack(int num, float weight[], float profit[], int capacity)
         }
         else
         {
+            tp += (capacity / weight[i]) * profit[i];
             break;
         }
     }
